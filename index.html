@@ -2,9 +2,551 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>헬로</title>
+    <title>양키캔들</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/jquery.mousewheel.min.js"></script>
+    <script src="script/jquery-migrate-1.4.1.min.js"></script>
+    <script src="script/common.js"></script>
   </head>
   <body>
-    <h1>헬로</h1>
+    <header id="header">
+      <h1><a href="#"><img src="images/logo.png" alt="양키캔들"></a></h1>
+      <form>
+        <fieldset>
+          <legend class="hidden">정보검색</legend>
+          <label><input type="text" class="searchText"></label>
+          <label><input type="button" value="확인" class="searchBtn"></label>
+        </fieldset>
+      </form>
+      <nav id="gnb">
+        <h2 class="hidden">양키캔들 이용자 메뉴</h2>
+        <ul id="mainMenu">
+          <li><a href="#" class="cap">brand story</a>
+            <ul class="subMenu">
+              <li><a href="#">창업스토리</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cap">product</a>
+            <ul class="subMenu">
+              <li><a href="#">캔들</a></li>
+              <li><a href="#">디퓨저</a></li>
+              <li><a href="#">차량용품</a></li>
+              <li><a href="#">홈 데코 소품</a></li>
+              <li><a href="#">기프트</a></li>
+              <li><a href="#">신상품 &amp; 한정품</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cap">franchise</a>
+            <ul class="subMenu">
+              <li><a href="#">창업정보</a></li>
+              <li><a href="#">사업의 장점</a></li>
+              <li><a href="#">가맹조건</a></li>
+              <li><a href="#" class="upper">가맹faq</a></li>
+              <li><a href="#">가맹문의</a></li>
+              <li><a href="#">가맹점 안내</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="cap">community</a>
+            <ul class="subMenu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">언론 및 방송</a></li>
+              <li><a href="#" class="upper">q&a</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="sliderWrap">
+      <div id="slider">
+        <h3 class="hidden">인기 상품 바로가기</h3>
+        <div class="slider1 slide on">
+          <div class="marginR">
+            <dl>
+              <dt class="upper">clean cotton</dt>
+              <dd class="p_title p_1-1">화이트 플라워와 레몬의 퓨어 에센셜 오일 블랜딩</dd>
+              <dd class="p_text p_1-2">
+                햇볕에 잘 말린 면 섬유처럼 깨끗하고 맑은 느낌을 주는 향으로<br>
+                기분 전환에 효과적이며, 불쾌한 냄새를 없애주는데 도움을 줍니다.
+              </dd>
+            </dl>
+            <div class="slideImg p_1-3 imgOn"><a href="#">클린코튼 제품 자세히보기</a></div>
+          </div>
+        </div>
+        <div class="slider2 slide">
+          <div class="marginR">
+            <dl>
+              <dt class="upper title2">black cherry</dt>
+              <dd class="p_title p_2-1">블랙체리의 순수한 퓨어 에센셜 오일 블랜딩</dd>
+              <dd class="p_text p_2-2">
+                바쁜 일상과 스트레스로 지쳐있는 현대인들에게 작은 위안과 활력을 주는<br>
+                향으로 과일 특유의 새콤달콤한 진한 여운이 실내에 잔존하여<br>
+                쾌적한 실내 환경을 만드는데 도움을 줍니다.
+              </dd>
+            </dl>
+            <div class="slideImg p_2-3"><a href="#">블랙체리 제품 자세히보기</a></div>
+          </div>
+        </div>
+        <div class="slider3 slide">
+          <div class="marginR">
+            <dl>
+              <dt class="upper title3">lemon lavender</dt>
+              <dd class="p_title p_3-1">시트러스 레몬, 탄제린, 스윗 라벤더 플라워의 퓨어 에센셜 오일 블랜딩</dd>
+              <dd class="p_text p_3-2">
+                허브의 여왕 라벤더의 꽃잎과 상큼한 레몬이 어우러져 심신을<br>
+                편안하게 해주어 숙면을 취할 수 있도록 도와줍니다.
+              </dd>
+            </dl>
+            <div class="slideImg p_3-3"><a href="#">레몬라벤더 제품 자세히보기</a></div>
+          </div>
+        </div>
+        <div class="slider4 slide">
+          <div class="marginR">
+            <dl>
+              <dt class="title4"><span class="upper">midsummer</span>’s <span class="upper">night</span></dt>
+              <dd class="p_title p_4-1">시트러스 레몬, 탄제린, 스윗 라벤더 플라워의 퓨어 에센셜 오일 블랜딩</dd>
+              <dd class="p_text p_4-2">
+                넓게 트인 한 여름 밤의 시원한 느낌을 담은 향으로 남성분들이 특히 선호하는<br>
+                멋스러운 향이며, 담배 냄새 제거에 도움을 줍니다.
+              </dd>
+            </dl>
+            <div class="slideImg p_4-3"><a href="#">미드썸머 나이트 제품 자세히보기</a></div>
+          </div>
+        </div>
+        <div class="slider5 slide">
+          <div class="marginR">
+            <dl>
+              <dt class="upper title5">pink sands</dt>
+              <dd class="p_title p_5-1">스위티한 꽃들,시트러스, 스파이시 바닐라의 퓨어 에센셜 오일 블랜딩</dd>
+              <dd class="p_text p_5-2">
+                바하마의 핑크샌드 해변의 작은 조각의 조개들이 모래와 섞여 핑크색으로 보이는 것이<br>
+                아름다운 열대의 이국적인 향취로 바쁜 일상에서 잠시 휴식을 취할 수 있는 향입니다.
+              </dd>
+            </dl>
+            <div class="slideImg p_5-3"><a href="#">핑크샌드 제품 자세히보기</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="sliderNum">
+          <span class="numOn">01</span>
+          <span>02</span>
+          <span>03</span>
+          <span>04</span>
+          <span class="noNum">05</span>
+      </div>
+    </section>
+    <section id="productWrap">
+      <h2 class="hidden">제품소개</h2>
+      <section id="product">
+          <h3 class="cap">product</h3>
+          <p>다양한 형태의 양키캔들을 언제 어디서든 향기롭게 만나보세요!</p>
+          <div id="productList">
+            <ul>
+              <li class="marginL">
+                <a href="#" class="listOn">캔들</a>
+                <div class="productType productType1 typeOn">
+                  <a href="#"><dl>
+                    <dt>자캔들</dt>
+                    <dd class="type1-1 upper">jar<br>candles</dd>
+                    <dd class="type1-2"><img src="images/type1-1.png" alt="자캔들 대표이미지"></dd>
+                    <dd class="type1-3">
+                      양키캔들의 대표적인 향초로 유리컨테이너에 담겨 사용이 편리하고 경제적이며 안전하게 사용할 수 있습니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor1"><dl>
+                    <dt>텀블러 캔들</dt>
+                    <dd class="type1-1 upper">tumbler<br>candle</dd>
+                    <dd class="type1-2"><img src="images/type1-2.png" alt="텀블러 캔들 대표이미지"></dd>
+                    <dd class="type1-3">
+                      현대적이고 심플한 디자인의 향초, 세련된 디자인과 깊고 풍부한 향이 편안한 분위기를 연출해 드립니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor2"><dl>
+                    <dt>티라이트 캔들</dt>
+                    <dd class="type1-1 upper">tea light<br>candles</dd>
+                    <dd class="type1-2"><img src="images/type1-3.png" alt="티라이트 캔들 대표이미지"></dd>
+                    <dd class="type1-3">
+                      자체 홀더에 담겨 있는 티라이트 타입의 향초로 작은 공간이나 분위기 연출에 탁월한 향초입니다.
+                      12개가 들어 있어 다양한 용도로 사용이 가능합니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#"><dl>
+                    <dt>보티브 캔들</dt>
+                    <dd class="type1-1 upper">votive<br>candles</dd>
+                    <dd class="type1-2"><img src="images/type1-4.png" alt="보티브 캔들 대표이미지"></dd>
+                    <dd class="type1-3">
+                      다양한 향을 경제적인 가격으로 체험하고 싶은 분에게 적합한 샘플러 타입의 향초입니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor1"><dl>
+                    <dt>타트 왁스</dt>
+                    <dd class="type1-1 upper">tarts wax<br>melts</dd>
+                    <dd class="type1-2"><img src="images/type1-5.png" alt="타트 왁 대표이미지"></dd>
+                    <dd class="type1-3">
+                      전용 버너를 이용하여 발향시키는 플레임리스(flameless/무심지) 향초로
+                      여러 타트를 혼합하여 사용하는 믹스&amp;매치 방식으로 개인의 취향을 한껏 즐길 수 있습니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor2"><dl>
+                    <dt>퓨어 래디언스</dt>
+                    <dd class="type1-1 upper">pure<br>radiance</dd>
+                    <dd class="type1-2"><img src="images/type1-6.png" alt="퓨어 래디언스 대표이미지"></dd>
+                    <dd class="type1-3">
+                      도시적인 디자인과 함께 콩에서 추출한 소이왁스 함유로 깊고 진한 향이 특징입니다.
+                      특히 심지표면이 납작하여 불꽃이 크고 넓게 빛납니다.
+                    </dd>
+                  </dl></a>
+                </div>
+              </li>
+              <li>
+                <a href="#">차량용</a>
+                <div class="productType productType2">
+                  <a href="#"><dl>
+                    <dt>차밍센츠</dt>
+                    <dd class="type1-1 upper">charming<br>scents</dd>
+                    <dd class="type1-2"><img src="images/type2-1.png" alt="차밍센츠 대표이미지"></dd>
+                    <dd class="type1-3">
+                      차밍센츠 스타터 세트는 차밍센츠를 처음 사용하는 분께 적합한 구성입니다.
+                      - 뱅글(고리) 1개, 로켓(향케이스) 1개
+                      - 참 장식(로고형) 1개, 향 리필(세라믹) 1개
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor1"><dl>
+                    <dt>카벤트스틱</dt>
+                    <dd class="type1-1 upper">car<br>vent stick</dd>
+                    <dd class="type1-2"><img src="images/type2-2.png" alt="카벤트스틱 대표이미지" height="280"></dd>
+                    <dd class="type1-3">
+                      송풍구에 끼워 사용하는 클립(clip) 형태의 자동차용 방향제입니다.
+                      책갈피, 핸드백, 파우치 등 다양한 용도로 사용이 가능합니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor2"><dl>
+                    <dt>카자얼티메이트</dt>
+                    <dd class="type1-1 upper">car jar<br>ultimate</dd>
+                    <dd class="type1-2"><img src="images/type2-3.png" alt="카자얼티메이트 대표이미지"></dd>
+                    <dd class="type1-3">
+                      자 캔들(<span class="cap">jar candle</span>)을 연상시키는 형태의 걸이식 자동차용 방향제입니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#"><dl>
+                    <dt>카자</dt>
+                    <dd class="type1-1 upper">car<br>jar</dd>
+                    <dd class="type1-2"><img src="images/type2-4.png" alt="카자 대표이미지" height="290"></dd>
+                    <dd class="type1-3">
+                      걸이형 페이퍼 타입의 스트링 방향제, 1팩에 3장이 들어있어 경제적 사용 가능합니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor1"><dl>
+                    <dt>트래블틴</dt>
+                    <dd class="type1-1 upper">travel<br>tin</dd>
+                    <dd class="type1-2"><img src="images/type2-5.png" alt="트래블틴 대표이미지" height="280"></dd>
+                    <dd class="type1-3">
+                      휴대가 용이하며 뛰어난 발향력의 휴대용 방향제입니다. 언제 어디서나 자기만의 향을 즐길 수 있습니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor2"><dl>
+                    <dt>프래그런스 스피어스</dt>
+                    <dd class="type1-1 upper">fragrance<br>spheres</dd>
+                    <dd class="type1-2"><img src="images/type2-6.png" alt="프래그런스 스피어스 대표이미지"></dd>
+                    <dd class="type1-3">
+                      프래그런스 스피어스는 차량용 방향제로 자동차 내부뿐 아니라 양초를 놓기에 곤란한
+                      세탁실, 욕실, 거실 등 그 어떤 작은 공간에도 사용하기에 좋은 상품입니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#"><dl>
+                    <dt>스마트 벤트클립</dt>
+                    <dd class="type1-1 upper">smart<br>vent clip</dd>
+                    <dd class="type1-2"><img src="images/type2-7.png" alt="스마트 벤트클립 대표이미지" height="280"></dd>
+                    <dd class="type1-3">
+                      스마트 벤트클립은 차량의 송풍구에 끼워 사용하는 클립 형태의 차량용 방향제입니다.
+                    </dd>
+                  </dl></a>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="noLine">가정용</a>
+                <div class="productType productType3">
+                  <a href="#"><dl>
+                    <dt>룸스프레이</dt>
+                    <dd class="type1-1 upper">room<br>spray</dd>
+                    <dd class="type1-2"><img src="images/type3-1.png" alt="룸스프레이 대표이미지" height="275"></dd>
+                    <dd class="type1-3">
+                      작은 공간에 적합한 스프레이 타입의 실내용 방향제로 신속하고 손쉽게 <span class="cap">yankee candle</span>의 향기로운 분위기를 연출할 수 있습니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor1"><dl>
+                    <dt>프래그런스 오일</dt>
+                    <dd class="type1-1 upper">fragrance<br>oil</dd>
+                    <dd class="type1-2"><img src="images/type3-2.png" alt="프래그런스 오일 대표이미지" height="270"></dd>
+                    <dd class="type1-3">
+                      전용 버너를 이용하여 발향시키는 <span class="cap">yankee candle</span>의 40여년 조향기술이 함축된 실내 방향용 프래그런스 오일입니다.
+                      다양한 형태로 방향을 즐길 수 있습니다.
+                    </dd>
+                  </dl></a>
+                  <a href="#" class="mixColor2"><dl>
+                    <dt>사쉐</dt>
+                    <dd class="type1-1 upper">sa<br>chets</dd>
+                    <dd class="type1-2"><img src="images/type3-3.png" alt="사쉐 대표이미지"></dd>
+                    <dd class="type1-3">
+                      페이퍼 타입의 방향제로 좁거나 밀폐된 공간 등에 적합합니다. (옷장, 신발장, 자동차 실내 등)
+                    </dd>
+                  </dl></a>
+                  <a href="#"><dl>
+                    <dt>올모스트애니웨어자</dt>
+                    <dd class="type1-1 upper">almost<br>anywhere</dd>
+                    <dd class="type1-2"><img src="images/type3-4.png" alt="올모스트애니웨어자 대표이미지" height="275"></dd>
+                    <dd class="type1-3">
+                      자석과 흡착판이 혼용되어 금속소재 또는 유리면의 탈부착이 손쉬운 실내용 방향제입니다.
+                      화장실, 주방, 사무실 파티션 등 원하는 장소 어디든 사용이 가능합니다.
+                    </dd>
+                  </dl></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="productBtn">
+            <a href="#" class="next">다음</a>
+            <a href="#" class="prev">이전</a>
+          </div>
+      </section>
+      <div id="colorWrap">
+        <div class="underLine"></div>
+        <section id="color">
+          <h4 class="cap">color therapy</h4>
+          <p>다양한 색상에 따라 심리의 변화를 느끼게 해주는 나만의 향기를 찾아보세요</p>
+          <div id="colorListWrap">
+            <ul id="colorList">
+              <li class="color1"><a href="#">빨강</a></li>
+              <li class="color2"><a href="#">핑크</a></li>
+              <li class="color3"><a href="#">노랑</a></li>
+              <li class="color4"><a href="#">초록</a></li>
+              <li class="color5"><a href="#">파랑</a></li>
+              <li class="color6"><a href="#">보라</a></li>
+            </ul>
+          </div>
+          <section class="colorType typeBg1 active">
+            <h5 class="hidden">빨강 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle1">
+                <dt>red</dt>
+                <dd class="color1-1">활력, 열정, 생기부여 / 근육이완 도움</dd>
+                <dd class="color1-2 plus1"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList1">
+                <li>
+                  <img src="images/color1-1.png" alt="크랜베리쳐트니">
+                  <p>크랜베리쳐트니</p>
+                </li>
+                <li>
+                  <img src="images/color1-2.png" alt="블랙체리">
+                  <p>블랙체리</p>
+                </li>
+                <li>
+                  <img src="images/color1-3.png" alt="핑크히커스">
+                  <p>핑크히커스</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="colorType typeBg2">
+            <h5 class="hidden">핑크 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle3">
+                <dt>pink</dt>
+                <dd class="color1-1">기분 전환, 편안함 / 생동감 부여</dd>
+                <dd class="color1-2 plus2"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList2">
+                <li>
+                  <img src="images/color2-1.png" alt="프레쉬 컷 로즈">
+                  <p>프레쉬 컷 로즈</p>
+                </li>
+                <li>
+                  <img src="images/color2-2.png" alt="핑크레이디 슬리퍼">
+                  <p>핑크레이디 슬리퍼</p>
+                </li>
+                <li>
+                  <img src="images/color2-3.png" alt="핑크샌즈">
+                  <p>핑크샌즈</p>
+                </li>
+                <li>
+                  <img src="images/color2-4.png" alt="썸머스쿱">
+                  <p>썸머스쿱</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="colorType typeBg3">
+            <h5 class="hidden">노랑 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle2">
+                <dt>yellow</dt>
+                <dd class="color1-1">기분 전환, 편안함 / 생동감 부여</dd>
+                <dd class="color1-2 plus3"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList3">
+                <li>
+                  <img src="images/color3-1.png" alt="메이어 레몬">
+                  <p>메이어 레몬</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="colorType typeBg4">
+            <h5 class="hidden">초록 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle3">
+                <dt>green</dt>
+                <dd class="color1-1">신경과민, 숙면 도움 / 창의성, 상상력 증진</dd>
+                <dd class="color1-2 plus4"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList2">
+                <li>
+                  <img src="images/color4-1.png" alt="그린 하우스">
+                  <p>그린 하우스</p>
+                </li>
+                <li>
+                  <img src="images/color4-2.png" alt="가든 하이드 어웨이">
+                  <p>가든 하이드 어웨이</p>
+                </li>
+                <li>
+                  <img src="images/color4-3.png" alt="발삼&amp;시더">
+                  <p>발삼&amp;시더</p>
+                </li>
+                <li>
+                  <img src="images/color4-4.png" alt="유칼립투스">
+                  <p>유칼립투스</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="colorType typeBg5">
+            <h5 class="hidden">파랑 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle3">
+                <dt>blue</dt>
+                <dd class="color1-1">동기부여 강화 / 창조적 두뇌 회전</dd>
+                <dd class="color1-2 plus5"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList2">
+                <li>
+                  <img src="images/color5-1.png" alt="바하마 브리즈">
+                  <p>바하마 브리즈</p>
+                </li>
+                <li>
+                  <img src="images/color5-2.png" alt="가든 스윗 피">
+                  <p>가든 스윗 피</p>
+                </li>
+                <li>
+                  <img src="images/color5-3.png" alt="오션 블라썸">
+                  <p>오션 블라썸</p>
+                </li>
+                <li>
+                  <img src="images/color5-4.png" alt="더뭐이즈 스카이">
+                  <p>더뭐이즈 스카이</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="colorType typeBg6">
+            <h5 class="hidden">보라 컬러테라피</h5>
+            <div>
+              <dl class="colorTypeTitle typeTitle3">
+                <dt>purple</dt>
+                <dd class="color1-1">신경과민, 숙면 도움 / 창의성, 상상력 증진</dd>
+                <dd class="color1-2 plus6"><a href="#">+</a></dd>
+              </dl>
+              <ul class="colorTypeList typeList2">
+                <li>
+                  <img src="images/color6-1.png" alt="라벤더 바닐라">
+                  <p>라벤더 바닐라</p>
+                </li>
+                <li>
+                  <img src="images/color6-2.png" alt="레몬라벤더">
+                  <p>레몬라벤더</p>
+                </li>
+                <li>
+                  <img src="images/color6-3.png" alt="라일락 블라썸">
+                  <p>라일락 블라썸</p>
+                </li>
+                <li>
+                  <img src="images/color6-4.png" alt="더뭐이즈 스카이">
+                  <p>프렌치 라벤더</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
+      <section id="scentWrap">
+        <div id="scent">
+          <h3 class="cap">new scent</h3>
+          <p>양키캔들에서 선보이는 새로운 제품으로 일상에 색다른 향기를 더해보세요</p>
+          <div id="scentList">
+            <div class="outer"><a href="#">
+              <div class="inner inner1">
+                <p>메종베르제 신상품 출시</p>
+              </div>
+            </a></div>
+            <div class="outer"><a href="#">
+              <div class="inner inner2">
+                <p>bonfire nights 시리즈 출시</p>
+              </div>
+            </a></div>
+            <div class="outer noMargin"><a href="#">
+              <div class="inner inner3">
+                <p>웜 캐시미어 신상품 출시</p>
+              </div>
+            </a></div>
+          </div>
+        </div>
+      </section>
+      </section>
+      <section id="banner">
+        <h2 class="hidden">커뮤니티</h2>
+        <section id="notice">
+          <h3 class="cap">notice</h3>
+          <ul>
+            <li><a href="#" class="upper">12월 t데이 양키캔들 엘리베이션(s) 50% sale<span>2020.11.09</span></a></li>
+            <li><a href="#">양키캔들 스타필드안성점 그랜드오픈!<span>2020.10.28</span></a></li>
+            <li><a href="#" class="upper">7월 t데이 양키캔들 자캔들(m) 50% sale<span>2020.06.16</span></a></li>
+          </ul>
+          <a href="#" class="more"><img src="images/moreBtn.png" alt="공지사항 더보기 버튼"></a>
+        </section>
+        <section id="news">
+          <h3 class="cap">news</h3>
+          <ul>
+            <li><a href="#">[아시아경제] 크리스마스 선물에서 시작된 '양키캔들'<span>2020.11.24</span></a></li>
+            <li><a href="#">[뉴시스] 양키캔들, 유럽 꽃향기 담은 '피오리디세타' 출시<span>2020.09.16</span></a></li>
+            <li><a href="#">[스타데일리뉴스] 양키캔들, 이탈리아 전통 ‘피오리디세타’ 선봬<span>2020.08.14</span></a></li>
+          </ul>
+          <a href="#" class="more"><img src="images/moreBtn.png" alt="공지사항 더보기 버튼"></a>
+        </section>
+      </section>
+    <div id="topBtn">
+      <a href="#">top</a>
+    </div>
+    <hr>
+    <footer id="footer">
+      <div id="info">
+        <p>
+          | 상호 : (주)아로마무역 | 대표 : 임미숙 | 사업자번호 : 220-81-99275<br>
+          | 본사 : 380-871) 충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+          | 서울사무소 : 135-871) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)<br>
+        </p>
+        <address>| 대표전화 : 1544-5885</address>
+        <small class="cap">copyright &copy; (주)아로마무역. all rights reserved.</small>
+      </div>
+      <div id="snsWrap">
+        <a href="#"><img src="images/sns_1.png" alt="페이스북 바로가기"></a>
+        <a href="#"><img src="images/sns_2.png" alt="유튜브 바로가기"></a>
+        <a href="#"><img src="images/sns_3.png" alt="블로그 바로가기"></a>
+        <a href="#"><img src="images/sns_4.png" alt="트위터 바로가기"></a>
+      </div>
+    </footer>
   </body>
 </html>
